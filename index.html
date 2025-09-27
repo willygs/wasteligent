@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Dashboard Responsive</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            /* sembunyikan scroll global */
+        }
+
+        #tableauViz {
+            width: 100%;
+            height: 100vh;
+            /* penuh setinggi layar */
+            overflow: hidden;
+            /* cegah scroll di dalam */
+        }
+
+        tableau-viz {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tableauViz"></div>
+
+    <script type="module">
+        import { TableauViz } from "https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js";
+
+        const container = document.getElementById("tableauViz");
+        const viz = new TableauViz();
+
+        // ganti sesuai dashboard Tableau kamu
+        viz.src = "https://public.tableau.com/views/wasteligent/Story1";
+        viz.toolbar = "bottom";
+        viz.hideTabs = true;
+
+        viz.style.width = "100%";
+        viz.style.height = "100%";
+
+        container.appendChild(viz);
+    </script>
+
+</body>
+
+</html>

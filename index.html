@@ -2,56 +2,378 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau Dashboard Responsive</title>
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-            /* sembunyikan scroll global */
-        }
 
-        #tableauViz {
-            width: 100%;
-            height: 100vh;
-            /* penuh setinggi layar */
-            overflow: hidden;
-            /* cegah scroll di dalam */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
 
-        tableau-viz {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-        }
-    </style>
+  <title>Chain App Dev - App Landing Page HTML5 Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--
+
+TemplateMo 570 Chain App Dev
+
+https://templatemo.com/tm-570-chain-app-dev
+
+-->
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <style>
+    .tableauPlaceholder object {
+      display: block !important;
+      margin: 0 auto !important;
+    }
+  </style>
 </head>
 
 <body>
-    <div id="tableauViz"></div>
 
-    <script type="module">
-        import { TableauViz } from "https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js";
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
 
-        const container = document.getElementById("tableauViz");
-        const viz = new TableauViz();
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/Wasteligent.png" height="65" alt="Chain App Dev">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#wsl">Dashboard</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#journey">User Journey</a></li>
+              <li class="scroll-to-section"><a href="#strategis">Nilai Strategis</a></li>
+              
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
 
-        // ganti sesuai dashboard Tableau kamu
-        viz.src = "https://public.tableau.com/views/wasteligent/Story1";
-        viz.toolbar = "bottom";
-        viz.hideTabs = true;
+  
 
-        viz.style.width = "100%";
-        viz.style.height = "100%";
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>MAKING <br>THE WORLD<br>A BETTER PLACE </h2>
+                    <h3> Wasteligent - Data Inteligent for Audit ESG and EPR.</h3>
 
-        container.appendChild(viz);
-    </script>
+                  </div>
 
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/slider-dec.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid" id="wsl">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class='tableauPlaceholder  mx-auto' id='viz1759067806064'
+          style="position: relative; max-width: 100%; text-align:center;"><noscript><a href='#'><img alt=' '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wa&#47;wasteligent&#47;Dashboard1&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='wasteligent&#47;Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='no' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object></div>
+        <script
+          type='text/javascript'> var divElement = document.getElementById('viz1759067806064'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '1600px'; vizElement.style.maxWidth = '100%'; vizElement.style.minHeight = '950px'; vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '1600px'; vizElement.style.maxWidth = '100%'; vizElement.style.minHeight = '950px'; vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.minWidth = '1600px'; vizElement.style.maxWidth = '100%'; vizElement.style.minHeight = '3800px'; vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-lg-12">
+        <div class='tableauPlaceholder mx-auto' id='viz1759067905767'
+          style="position: relative; max-width: 100%; text-align:center;"><noscript><a href='#'><img alt=' '
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wa&#47;wasteligent&#47;Dashboard2&#47;1_rss.png'
+                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='wasteligent&#47;Dashboard2' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='no' />
+            <param name='static_image'
+              value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wa&#47;wasteligent&#47;Dashboard2&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object></div>
+        <script
+          type='text/javascript'>                    var divElement = document.getElementById('viz1759067905767'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '1600px'; vizElement.style.maxWidth = '100%'; vizElement.style.minHeight = '950px'; vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '1600px'; vizElement.style.maxWidth = '100%'; vizElement.style.minHeight = '950px'; vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.minWidth = '1600px'; vizElement.style.maxWidth = '100%'; vizElement.style.minHeight = '3800px'; vizElement.style.maxHeight = (divElement.offsetWidth * 1.77) + 'px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="about" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>WasteLigent </h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>sistem intelijen data berbasis dashboard interaktif yang mengintegrasikan berbagai sumber (SIPSN,
+              TPA/TPST, bank sampah, dan input lapangan) serta memanfaatkan AI untuk analisis dan validasi, sehingga
+              mendukung proses verifikasi ESG dan EPR Sucofindo. Fitur diferensiasi utamanya, klasterisasi
+              sosial-ekologis (EcoCluster), memetakan wilayah menurut risiko dan karakteristiknya untuk
+              mengidentifikasi
+              prioritas intervensi, memfokuskan audit, serta membuka peluang proyek keberlanjutan yang lebih akurat,
+              terarah, dan berdampak</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Timbulan sampah global naik 70% pada 2025</h4>
+            <p>World Bank, 2025</p><br>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Timbulan Sampah Indonesia 38,7 Juta ton per tahun</h4>
+            <p>SIPSN 2023</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Indonesia mencapai 72% Mismanage waste rate</h4>
+            <p>OECD 2025 </p><br>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item fourth-service">
+            <div class="icon"></div>
+            <h4>Biaya pengelolaan limbah global diproyeksi naik +154% dari 2020 ke 20250</h4>
+            <p>UNEP, 2024
+            </p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="journey" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h4>User Journey</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>WasteLigent menghadirkan manfaat berlapis melalui 3 kelompok user utama: </p>
+
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Memudahkan input lapangan</a></h4>
+
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Mempercepat verifikasi klaim EPR</a></h4>
+
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">membantu regulator menetapkan prioritas audit berbasis data</a></h4>
+
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <p>Kombinasi ini menjadikan sistem lebih transparan, efisien, dan kredibel untuk mendukung pengelolaan
+                sampah nasional dan pencapaian target ESG/EPR. </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="assets/images/user_journey.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="strategis" class="pricing-tables">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>nilai strategis</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+
+            <h4>Inside-Out (Sucofindo)</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Efisiensi Operasional: audit lebih cepat dan fokus</li>
+              <li>Validasi cerdas mengurangi human error, memperkuat metodologi audit.</li>
+              <li>Inovasi layanan intelijen data & dashboard.</li>
+
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-pro">
+
+             <h4>Dampak terukur</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Waktu audit berkurang 20–30%</li>
+              <li>Error data turun 30–40%</li>
+              <li>Target wilayah prioritas lebih tepat 30%</li>
+              <li>Potensi penurunan overload TPA 10–15%</li>
+              <li>Prediksi timbulan dengan error ±10%</li>
+            </ul>
+
+            
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+
+           <h4>Outside-In (Stakeholder)</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Regulator (KLHK): transparansi real-time mempermudah pemantauan nasional & mendukung Satu Data
+                Indonesia.</li>
+              <li>PRO & Korporasi: bukti ESG/EPR lebih kuat, mendukung pelaporan keberlanjutan global (GRI, SDGs).</li>
+              <li>Publik & Masyarakat: akuntabilitas meningkat, trust publik lebih tinggi.</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="newsletter">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2025 WasteLigent. All Rights Reserved.
+              <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

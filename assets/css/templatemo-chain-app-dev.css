@@ -1082,7 +1082,7 @@ Services Style
 }
 
 .service-item:hover {
-  background-image: url(../images/service-bg.jpg);
+  background-image: url(../images/service-bg-new.jpg);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
